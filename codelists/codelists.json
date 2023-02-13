@@ -1,3 +1,10 @@
 {
-  "files": {}
+  "files": {
+    "opensafely-adrenaline-pens.csv": {
+      "id": "opensafely/teratogenic-medicines/339a925c/",
+      "url": "https://www.opencodelists.org/codelist/opensafely/teratogenic-medicines/339a925c/",
+      "downloaded_at": "2023-02-13 14:28:09.073525Z",
+      "sha": "3f430b2ce844cc061364ffc29c2058cb83189b68"
+    }
+  }
 }
