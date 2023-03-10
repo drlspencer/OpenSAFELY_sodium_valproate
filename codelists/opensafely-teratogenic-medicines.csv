@@ -1,12 +1,4 @@
 dmd_type,dmd_id,dmd_name,bnf_code
-VMP,134538003,Valproic acid 250mg gastro-resistant tablets,0402030Q0AAAAAA
-VMP,134537008,Valproic acid 500mg gastro-resistant tablets,0402030Q0AAABAB
-AMP,3846411000001106,Depakote 250mg gastro-resistant tablets,0402030Q0BBAAAA
-AMP,3847111000001103,Depakote 500mg gastro-resistant tablets,0402030Q0BBABAB
-AMP,37573711000001104,Belvo 250mg gastro-resistant tablets,0402030Q0BCAAAA
-AMP,37574111000001103,Belvo 500mg gastro-resistant tablets,0402030Q0BCABAB
-AMP,37982211000001101,Syonell 500mg gastro-resistant tablets,0402030Q0BDAAAB
-AMP,37982411000001102,Syonell 250mg gastro-resistant tablets,0402030Q0BDABAA
 VMP,323385006,Modafinil 100mg tablets,0404000R0AAAAAA
 AMP,19360511000001102,Modafinil 100mg tablets,0404000R0AAAAAA
 AMP,19786811000001100,Modafinil 100mg tablets,0404000R0AAAAAA
@@ -43,22 +35,6 @@ VMP,14984311000001106,Modafinil 100mg/5ml oral suspension,0404000R0AAAGAG
 AMP,14980511000001109,Modafinil 100mg/5ml oral suspension,0404000R0AAAGAG
 AMP,3682211000001109,Provigil 100mg tablets,0404000R0BBAAAA
 AMP,4364511000001108,Provigil 200mg tablets,0404000R0BBABAC
-VMP,323008001,Valproic acid 150mg gastro-resistant capsules,040801020AAAAAA
-VMP,323009009,Valproic acid 300mg gastro-resistant capsules,040801020AAABAB
-VMP,323010004,Valproic acid 500mg gastro-resistant capsules,040801020AAACAC
-VMP,15535811000001106,Valproic acid 250mg/5ml oral solution,040801020AAAFAF
-VMP,15536811000001103,Valproic acid 250mg/5ml oral suspension,040801020AAAFAF
-AMP,15534811000001105,Valproic acid 250mg/5ml oral solution,040801020AAAFAF
-AMP,15536111000001105,Valproic acid 250mg/5ml oral suspension,040801020AAAFAF
-VMP,16102311000001106,Valproic acid 500mg/5ml oral solution,040801020AAAGAG
-VMP,16102411000001104,Valproic acid 500mg/5ml oral suspension,040801020AAAGAG
-AMP,16097311000001102,Valproic acid 500mg/5ml oral solution,040801020AAAGAG
-AMP,16097611000001107,Valproic acid 500mg/5ml oral suspension,040801020AAAGAG
-VMP,11146711000001104,Valproic acid 125mg gastro-resistant capsules,040801020AAAHAH
-AMP,3920911000001105,Convulex 150mg gastro-resistant capsules,040801020BBAAAA
-AMP,3921311000001104,Convulex 300mg gastro-resistant capsules,040801020BBABAB
-AMP,3921711000001100,Convulex 500mg gastro-resistant capsules,040801020BBACAC
-AMP,11141611000001101,Depakote 125mg sprinkle gastro-resistant capsules,040801020BCACAH
 VMP,323023006,Topiramate 50mg tablets,040801050AAAAAA
 AMP,16186411000001104,Topiramate 50mg tablets,040801050AAAAAA
 AMP,18469711000001106,Topiramate 50mg tablets,040801050AAAAAA
@@ -648,6 +624,9 @@ AMP,21900811000001103,Sodium valproate 500mg gastro-resistant tablets,0408010W0A
 AMP,19664811000001102,Sodium valproate 500mg gastro-resistant tablets,0408010W0AAADAD
 AMP,755011000001104,Sodium valproate 500mg gastro-resistant tablets,0408010W0AAADAD
 VMP,35928211000001109,Sodium valproate 200mg/5ml oral solution,0408010W0AAAEAE
+VMP,35928511000001107,Sodium valproate 400mg powder and solvent for solution for injection vials,0408010W0AAAHAH
+AMP,29935711000001101,Sodium valproate 400mg powder and solvent for solution for injection vials,0408010W0AAAHAH
+AMP,36881311000001108,Sodium valproate 400mg powder and solvent for solution for injection vials,0408010W0AAAHAH
 VMP,19964511000001101,Sodium valproate 100mg suppositories,0408010W0AAARAR
 AMP,19964711000001106,Sodium valproate 100mg suppositories,0408010W0AAARAR
 VMP,39108211000001105,Sodium valproate 200mg modified-release tablets,0408010W0AAAZAZ
@@ -683,6 +662,7 @@ AMP,889311000001108,Epilim 200 gastro-resistant tablets,0408010W0BBABAC
 AMP,448711000001102,Epilim 500 gastro-resistant tablets,0408010W0BBACAD
 AMP,100011000001108,Epilim 200mg/5ml liquid,0408010W0BBADAA
 AMP,892411000001106,Epilim 200mg/5ml syrup,0408010W0BBAEAE
+AMP,4351111000001108,Epilim Intravenous 400mg powder and solvent for solution for injection vials,0408010W0BBAIAH
 AMP,489711000001100,Epilim Chrono 200 tablets,0408010W0BBAJAZ
 AMP,789911000001106,Epilim Chrono 300 tablets,0408010W0BBAKA1
 AMP,739111000001100,Epilim Chrono 500 tablets,0408010W0BBALA2
