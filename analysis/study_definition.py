@@ -15,7 +15,7 @@ seizure_frequency_codes = codelist_from_csv(
     column="dmd_id")
 
 # set date variable to current date
-index_date = "2022-31-12",
+index_date = str(date.today()),
 
 # ---------- SET VARIABLES
 
