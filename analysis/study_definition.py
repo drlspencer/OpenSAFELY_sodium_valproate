@@ -1,6 +1,7 @@
 from cohortextractor import StudyDefinition, patients, codelist, codelist_from_csv, combine_codelists, filter_codes_by_category  # NOQA
-from datetime import date
-# from codelists import *
+# from datetime import date
+# from codelists import *  # <- if we need to collect codelists in one place
+# to update codelists: run 'opensafeley codelists update'
 
 # ---------- OVERALL CODE DEFINITIONS
 
@@ -9,13 +10,20 @@ teratogenic_drug_codes = codelist_from_csv(
     system="snomed",
     column="dmd_id")
 
-seizure_frequency_codes = codelist_from_csv(
-    "codelists/nhsd-primary-care-domain-refsets.csv",
-    system="snomed",
-    column="dmd_id")
+# use the following if we want to restrict to specific codes, 
+# e.g. for only sodium valproate:
+# weight_codes = codelist(
+#    ["27113001", "162763007"], system="snomed"
+# )
+
+# seizure_frequency_codes = codelist_from_csv(
+#    "codelists/nhsd-primary-care-domain-refsets-lszfreq_cod.csv",
+#    system="snomed",
+#    column="dmd_id")
 
 # set date variable to current date
-index_date = str(date.today()),
+index_date = '2022-01-01'
+# str(date.today()),
 
 # ---------- SET VARIABLES
 

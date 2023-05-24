@@ -5,6 +5,12 @@
       "url": "https://codelists.opensafely.org/codelist/opensafely/teratogenic-medicines/49f7459b/",
       "downloaded_at": "2023-03-10 13:34:25.012653Z",
       "sha": "1003c76a1ab7179d8484638baaa24fae0686605f"
+    },
+    "nhsd-primary-care-domain-refsets-lszfreq_cod.csv": {
+      "id": "nhsd-primary-care-domain-refsets/lszfreq_cod/20200812",
+      "url": "https://codelists.opensafely.org/codelist/nhsd-primary-care-domain-refsets/lszfreq_cod/20200812/",
+      "downloaded_at": "2023-05-24 12:31:50.953660Z",
+      "sha": "e879035c1c3565d5ddde7773966dd958c5f25853"
     }
   }
 }
