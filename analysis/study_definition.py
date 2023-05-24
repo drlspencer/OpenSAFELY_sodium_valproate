@@ -1,14 +1,31 @@
-from cohortextractor import StudyDefinition, patients, codelist, codelist_from_csv  # NOQA
+from cohortextractor import StudyDefinition, patients, codelist, codelist_from_csv, combine_codelists, filter_codes_by_category  # NOQA
+from datetime import date
 # from codelists import *
+
+# ---------- OVERALL CODE DEFINITIONS
 
 teratogenic_drug_codes = codelist_from_csv(
     "codelists/opensafely-teratogenic-medicines.csv",
     system="snomed",
     column="dmd_id")
 
+seizure_frequency_codes = codelist_from_csv(
+    "codelists/nhsd-primary-care-domain-refsets.csv",
+    system="snomed",
+    column="dmd_id")
+
+# set date variable to current date
+index_date = "2022-31-12",
+
+# ---------- SET VARIABLES
+
+# This is used to set default behaviour for the dummy data that is generated.
+# In this case, we expect event dates to be between 1950-01-01 and today's
+# date, uniformly distributed in that period, and to be recorded for 50%
+# of patients (returning empty "" values otherwise).
 study = StudyDefinition(
     default_expectations={
-        "date": {"earliest": "1900-01-01", "latest": "today"},
+        "date": {"earliest": "1950-01-01", "latest": "today"},
         "rate": "uniform",
         "incidence": 0.5,
     },
@@ -20,14 +37,31 @@ study = StudyDefinition(
     population=patients.all(),
 
     age=patients.age_as_of(
-        "2022-09-01",
+        as_of_date,
         return_expectations={
             "rate": "universal",
             "int": {"distribution": "population_ages"},
         },
     ),
 
-    example=patients.with_these_medications(
+    sex=patients.sex(
+        return_expectations={
+            "rate": "universal",
+            "category": {"ratios": {"M": 0.49, "F": 0.51}},
+        }
+    ),
+
+    imd=patients.address_as_of(
+        as_of_date,
+        returning="index_of_multiple_deprivation",
+        round_to_nearest=100,
+        return_expectations={
+            "rate": "universal",
+            "category": {"ratios": {"100": 0.1, "200": 0.2, "300": 0.7}},
+        }
+    ),
+
+    TMcode=patients.with_these_medications(
         teratogenic_drug_codes,
         return_expectations={
            "int": {"distribution": "normal", "mean": 2, "stddev": 1},
