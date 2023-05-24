@@ -37,7 +37,7 @@ study = StudyDefinition(
     population=patients.all(),
 
     age=patients.age_as_of(
-        as_of_date,
+        index_date,
         return_expectations={
             "rate": "universal",
             "int": {"distribution": "population_ages"},
@@ -52,7 +52,7 @@ study = StudyDefinition(
     ),
 
     imd=patients.address_as_of(
-        as_of_date,
+        index_date,
         returning="index_of_multiple_deprivation",
         round_to_nearest=100,
         return_expectations={
