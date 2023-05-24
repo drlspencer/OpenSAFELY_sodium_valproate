@@ -69,18 +69,20 @@ study = StudyDefinition(
         }
     ),
 
+        # return_expectations={
+           # "int": {"distribution": "normal", "mean": 2, "stddev": 1},
+           # "incidence": 0.2,
+        # },
+
     TMcode=patients.with_these_medications(
         teratogenic_drug_codes,
-        return_expectations={
-           "int": {"distribution": "normal", "mean": 2, "stddev": 1},
-           "incidence": 0.2,
-        },
+        return_expectations=None,
         on_or_before=None,
         on_or_after=None,
         between=None,
         find_first_match_in_period=None,
         find_last_match_in_period=None,
-        returning='binary_flag',
+        returning='binary flag',
         include_date_of_match=True,
         date_format=None,
         ignore_days_where_these_clinical_codes_occur=None,
