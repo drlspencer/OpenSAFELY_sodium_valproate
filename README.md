@@ -1,6 +1,6 @@
-# opensafely_test
+# OpenSAFELY_sodium_valproate
 
-[View on OpenSAFELY](https://jobs.opensafely.org/repo/https%253A%252F%252Fgithub.com%252Fdrlspencer%252Fopensafely_test)
+[View on OpenSAFELY](https://jobs.opensafely.org/repo/https%253A%252F%252Fgithub.com%252Fdrlspencer%252Fopensafely_sodium_valproate)
 
 Details of the purpose and any published outputs from this project can be found at the link above.
 
